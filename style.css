@@ -1,0 +1,49 @@
+@import url(lib/font-awesome/css/font-awesome.css);
+
+body {
+	font-family: 'Droid Sans Mono', sans-serif;
+
+	color: rgba(203, 203, 203, 0.3);
+	margin:40px;
+	background: #222020;
+}
+
+h1 {
+	font-weight: normal;
+	border: 2px dashed rgba(203, 203, 203, 0.3);
+	padding:10px 20px;
+	margin-bottom: 30px;
+	border-top:0;
+;
+}
+
+button {
+	background: rgba(89,89,89,0.3);
+	color: rgba(203, 203, 203, 0.3);
+	border:0;
+	padding:18px;
+	font-size: 24px;
+	border-radius: 4px;
+	text-transform: uppercase;
+	text-align: center;
+	margin:4px;
+}
+
+button:hover {
+	background: rgba(89,89,89,0.2);
+	color: rgba(203, 203, 203, 0.2);
+ ;
+}
+
+button:active, button.pressed {
+	background: rgba(89,89,89,0.1);
+	color: rgba(203, 203, 203, 0.1);
+}
+
+.text-button 
+{letter-spacing: 4px;}
+
+.move-buttons {float:left;}
+
+.move-buttons button{ width:70px;}
+.top-button-row {text-align: center;}

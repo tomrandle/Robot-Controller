@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Robo Control</title>
+    <link rel="stylesheet" href="style.css">
+    <!--[if IE]>
+        <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+
+    <link href='http://fonts.googleapis.com/css?family=Roboto:400,300' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Droid+Sans+Mono' rel='stylesheet' type='text/css'>
+
+
+    <script src="lib/mousetrap/mousetrap.js"></script>
+    <script src="http://ajax.aspnetcdn.com/ajax/jquery/jquery-1.9.0.min.js"></script>
+
+
+    <script>
+
+        $(document).ready(function() {
+
+            Mousetrap.bind('up', function() { 
+                $("#move-forward").trigger("click").addClass('pressed');
+            });
+
+            Mousetrap.bind('up', function() { 
+                $("#move-forward").removeClass('pressed');
+            },'keyup');
+
+
+            Mousetrap.bind('down', function() { 
+                $("#move-back").trigger("click").addClass('pressed');
+                console.log('pressed');
+            });
+
+            Mousetrap.bind('down', function() { 
+                $("#move-back").removeClass('pressed');
+            },'keyup');
+
+        });
+
+    </script>
+
+</head>
+
+<body id="home">
+
+    <h1>Robo Control</h1>
+
+    <div class="move-buttons">
+        <div class='top-button-row'>
+            <button id='move-forward'><i class='icon-long-arrow-up'></i></button>
+        </div>
+        <div class='bottom-button-row'>
+            <button id='move-left'><i class='icon-long-arrow-left'></i></button>
+            <button id= 'move-back'><i class='icon-long-arrow-down'></i></button>
+            <button id='move-right'><i class='icon-long-arrow-right'></i></button>
+        </div>
+    </div>
+
+    <button class='text-button'>Fire</button>
+</body>
+</html>
