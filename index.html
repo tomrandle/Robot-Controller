@@ -49,17 +49,31 @@
 
     <h1>Robo Control</h1>
 
-    <div class="move-buttons">
-        <div class='top-button-row'>
-            <button id='move-forward'><i class='icon-long-arrow-up'></i></button>
+    <div id="control-panel">
+
+        <div id="controls" class="panel">
+            <div class="move-buttons">
+                <div class='top-button-row'>
+                    <button id='move-forward'><i class='icon-long-arrow-up'></i></button>
+                </div>
+                <div class='bottom-button-row'>
+                    <button id='move-left'><i class='icon-long-arrow-left'></i></button>
+                    <button id= 'move-back'><i class='icon-long-arrow-down'></i></button>
+                    <button id='move-right'><i class='icon-long-arrow-right'></i></button>
+                </div>
+            </div>
+            
+            <button id="fire" class='text-button'><i class="icon-bullseye"></i>Fire</button>
+            <button id="honk" class='text-button'><i class="icon-bullhorn"></i>Honk</button>
+            <button id="take-photo"><i class="icon-camera"></i></button>
         </div>
-        <div class='bottom-button-row'>
-            <button id='move-left'><i class='icon-long-arrow-left'></i></button>
-            <button id= 'move-back'><i class='icon-long-arrow-down'></i></button>
-            <button id='move-right'><i class='icon-long-arrow-right'></i></button>
+
+        <div id="telemetry" class="panel">
+            <div id="schematic">
+                <img src="robot.svg">
+            </div>
         </div>
     </div>
 
-    <button class='text-button'>Fire</button>
 </body>
 </html>
